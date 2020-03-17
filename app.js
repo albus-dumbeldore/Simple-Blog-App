@@ -6,15 +6,11 @@ mongoose        = require("mongoose"),
 sanitizer       = require("express-sanitizer");
 
 
-// mongoose.set('useNewUrlParser', true);
-// mongoose.set('useUnifiedTopology',true);
-// mongoose.connect("mongodb://localhost/My_blog_app");
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useUnifiedTopology',true);
+mongoose.connect("mongodb://localhost/My_blog_app");
 
-mongoose.connect("mongodb+srv://review:yohoneysingh@1@cluster0-jhje6.mongodb.net/Blog?retryWrites=true&w=majority",{
-    useNewUrlParser: true,
-    useUnifiedTopology:true
 
-});
 
 
 // -------------------------------------------------------------------------------------------     
